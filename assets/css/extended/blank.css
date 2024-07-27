@@ -3,3 +3,43 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+.post-content pre, code {
+    font-family: 'Inconsolata', 'Noto Sans SC', sans-serif;
+    /* max-height: 40rem; */
+}
+
+.admonitionblock td {
+    border: none !important;
+}
+.admonitionblock td.icon [class^="fa icon-"] {
+    cursor: default;
+    padding: 3px 7px 3px 7px;
+    position: relative;
+    text-align: center;
+}
+.admonitionblock.note table {
+    background-color: #4dbbd5cc;
+    border-radius: 0.5rem;
+}
+.admonitionblock.tip table {
+    background-color: #4dbb5f33;
+}
+.admonitionblock td.icon .icon-note::before {
+    content: "\f05a";
+    color: #fff;
+}
+.admonitionblock td.icon .icon-tip::before {
+    /* background-image: url("/octicons-16.svg#view-light-bulb" | absUrl }}); */
+    content: "\f0eb";
+    color: #286E18;
+    margin-right: 10px;
+}
+.admonitionblock td.icon .icon-tip {
+    background-color: #43b929;
+    color: #fff;
+    margin-left: 10px;
+}
+.admonitionblock td.content {
+    color: #fffff7;
+}
