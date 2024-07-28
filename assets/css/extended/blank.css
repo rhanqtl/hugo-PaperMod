@@ -9,6 +9,13 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     /* max-height: 40rem; */
 }
 
+.admonitionblock table {
+    padding-top: 0.6rem;
+    border-collapse: collapse;
+}
+.admonitionblock td {
+    border: none !important;
+}
 .admonitionblock td.icon [class^="fa icon-"] {
     font-family: 'Font Awesome 5 Free';
     font-weight: bold;
@@ -16,6 +23,9 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
     cursor: default;
     padding: 3px 7px 3px 7px;
     border-radius: 0.5em;
+    position: relative;
+    top: -2rem;
+    right: -3.2rem;
 }
 .admonitionblock td.icon .icon-note::before {
     content: "\f05a";
@@ -41,4 +51,12 @@ Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-cs
 }
 .admonitionblock td.icon .icon-tip::after {
     content: "TIP"
+}
+.admonitionblock td.content {
+    background-color: #2e2e33;
+    padding: 1rem !important;
+}
+
+.colist td i.conum {
+
 }
